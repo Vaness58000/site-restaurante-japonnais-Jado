@@ -1,5 +1,5 @@
 *{
-    margin: 0%;
+    margin: 0% 0% 0%;
 }
 /*haut/menu début*/
 
@@ -70,7 +70,6 @@ header nav ul a{
     font-family: "poppins bold2";
     font-size: 20px;
     font-style:normal;
-    font-weight: 400px;
     line-height: 6em;
     color: #df6951;
 }
@@ -85,7 +84,8 @@ header nav ul a{
 .souligne{
     float: left;
     position: absolute;
-    padding-bottom: 100px;
+    left: 20px;
+    top: 501px;
     margin-left: 8%;
 }
 article{  font-family: "poppins regular";
@@ -233,7 +233,7 @@ article{  font-family: "poppins regular";
     background-color: rgb(255, 182, 45);
     border-color: rgb(255, 182, 45);
     box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
-    margin-left: 40%;
+    margin-left: 45%;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 15px;
@@ -260,29 +260,32 @@ article{  font-family: "poppins regular";
     background-size: 140%;
     width: 100%;
     background-repeat: no-repeat;
-    padding: 99px;
+    padding: 0px;
     padding-bottom: 400px;
     }
 .vidéo{ 
    
     padding-top: 50px;
-    padding-left: 8%;
+    padding-left: 10%;
     width: 20%;
     position: absolute;
     cursor: pointer;
-
 }  
 .bouton_play{
 
     float: left;
-    width: 3%;
+    width: 4%;
     padding-top: 120px;
-    padding-left: 17%;
+    left: 18%;
     position: relative; 
+    cursor: pointer;
 }
 .souligne2{
    float: left;
-   position: absolute;
+   position: absolute;  
+   top: 370px;
+   left: 200px;
+   z-index:2;
 }
 #section3 h1{
     font-family: "volkhov bold"; 
@@ -351,6 +354,7 @@ article{  font-family: "poppins regular";
         border-color: rgb(255, 182, 45);
         box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
         margin-top: 50px;
+        margin-left:10px;
         margin-bottom: 50px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -392,6 +396,7 @@ article{  font-family: "poppins regular";
     font-size: 14px;
     color:#868686;
 }
+/* débu formulaire*/
 .formulaire{
         line-height: 2em;
 }
