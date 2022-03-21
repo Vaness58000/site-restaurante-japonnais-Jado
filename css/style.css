@@ -66,6 +66,7 @@ header nav ul a{
     background-repeat: no-repeat;
 }
 .welcome p {
+    padding-top: 50px;
     font-family: "poppins bold2";
     font-size: 20px;
     font-style:normal;
@@ -255,12 +256,13 @@ article{  font-family: "poppins regular";
 /*début section 3*/
 #section3{     
     background-image: url("illustration_chef.jpg");
+    position: relative;
     background-size: 140%;
     width: 100%;
     background-repeat: no-repeat;
-    position: a;
-    z-index: 3;
-}
+    padding: 99px;
+    padding-bottom: 400px;
+    }
 .vidéo{ 
    
     padding-top: 50px;
@@ -294,6 +296,7 @@ article{  font-family: "poppins regular";
 }
 #section3 p{
     padding-top: 30px;
+    padding-bottom: 20px;
     color:white;
     font-family:  "poppins regular";
     line-height: 2em;
@@ -302,13 +305,14 @@ article{  font-family: "poppins regular";
     font-weight: 500;
     line-height: 30px;
 }
-.illustration_endroit{ 
-        position: absolute;
-        height: 652px;
-        width: 100%;
-        z-index: 1;
-     }
-
+.illustration_endroit{
+    position: absolute;
+    padding-top: 20px;
+    width:100%;
+    z-index: 3;
+    left:0;
+    bottom: -335px;
+}
 /*fin section 3*/
 
  /*début section4*/
@@ -337,7 +341,7 @@ article{  font-family: "poppins regular";
 #section4 ul li{
     list-style-type: none;
     margin-top: 60px;
-    margin-left: 15%;
+    margin-left: 13%;
     font-family: "poppins regular";
     font-size: 16px;
     color: #3e3f43;
