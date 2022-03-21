@@ -1,0 +1,516 @@
+*{
+    margin: 0%;
+}
+/*haut/menu début*/
+
+header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-around;
+        background-color: white;
+        width: 100%;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        padding: 20px 0;   
+}
+header nav ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        list-style-type: none;
+}
+li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+header nav ul a{
+    color: #000000;
+    text-decoration: none;
+}
+.menu1 {
+        margin-right: 25px;
+}
+.menu2{
+        margin-right: 25px;
+}
+.menu3{
+        margin-right: 25px;
+}
+.menu4{
+        margin-right: 25px;
+}
+.menu1:hover{
+        text-decoration: underline;}
+.menu2:hover{
+        text-decoration: underline;
+}
+.menu3:hover
+      {
+        text-decoration: underline;    
+}
+.menu4:hover{
+        text-decoration: underline;
+}
+
+/*haut/menu fin*/
+
+/*début section 1*/
+#section1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.welcome{
+    padding: 0px 50px 100px 200px;
+    background-image: url("illustration_principale.jpg");
+    background-size: 115%;
+    background-repeat: no-repeat;
+}
+#section1 p {
+    font-family: "poppins bold2";
+    font-size: 20px;
+    font-style:normal;
+    font-weight: 400px;
+    line-height: 6em;
+    color: #df6951;
+}
+.welcome h1{
+    font-family: "volkhov bold2";
+    font-size: 86px;
+    font-style: normal;
+    line-height: 1em;
+    color:#ffffff;
+}
+.souligne{
+    float: left;
+    position: absolute;
+    margin-top: 5px;
+    padding-bottom: 50px;
+}
+article{  font-family: "poppins regular";
+    color: rgb(214, 211, 211);
+    font-size: 20px;
+    line-height: 2em;
+    padding-top: 50px;
+}
+.button{
+        background-color: rgb(255, 182, 45);
+        border-color: rgb(255, 182, 45);
+        box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
+        margin-top: 3%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 200px;
+        justify-content: center;
+        color: #ffff;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;}
+.button:hover{
+           width: 210px;
+}
+ /*fin de section 1*/
+
+/*début section 2*/
+#section2{
+    padding-top: 2%;
+    display: block;
+    justify-content: space-around;
+}
+.decor1{
+    float: right;
+}
+#section2 h3{
+    font-family:"poppins regular";
+    font-size: 18px;
+    color: #5e6282;
+    margin-top: 3%;
+    text-align: center;
+    margin-left: 10%;
+}
+#section2 h1{
+    text-align: center;
+    margin-left: 10%;
+    color:rgb(0, 0, 70);
+    font-family: "volkhov bold2";
+    font-size: 50px; 
+    padding-bottom: 30px;
+}
+
+/*--photo plat+titre*/
+#image{  
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    font-size: larger;
+    color:rgb(97, 97, 99);
+    margin-bottom: 10%;
+}
+#section2>h4{
+    font-family: "poppins regular";
+    font-size: 18px;
+}
+.plat{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: stretch; 
+        
+}
+.image1, .image2, .image3{
+    margin-right: 25px;
+    padding-bottom: 30px;
+    box-shadow: 4px 4px 4px 4px rgb(239, 239, 243);
+    border-radius: 25px;
+    font-family: "poppins regular";
+    font-style: normal;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 16px;
+    color:#5e6282;
+    text-align: center;  
+}
+.image3{
+    background-color: white;
+    z-index: 1; 
+}
+
+/*--deco section2*/
+.decoration_filet{
+    width: 9%;
+    position: absolute;
+    margin-left: 25%;
+    float: right;
+}
+/*--photo maki+titre*/
+.maki{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    align-content: center;
+    align-items: baseline;
+    margin-left: 17% ;
+}
+.maki { 
+    font-size: 16px;
+    line-height: 2em;
+    font-family: "poppins regular";
+    color: #5e6282;
+}
+.maki h6{
+    font-family: "open sans regular2";
+    font-size: 20px;
+    line-height: 3em;
+}
+.photo{
+    border-radius: 25px 25px 0px 0px;
+}
+.photo1,.photo2, .photo3{
+    width:20%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center; 
+}
+.photo4{
+    width:20%;
+    padding-top: 20px;
+    text-align: center; 
+    padding-bottom: 60px;
+}
+
+.photo1:hover, .photo2:hover,.photo3:hover, .photo4:hover{
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 4px 4px 4px 4px rgb(239, 239, 243);
+}
+.button2{
+    background-color: rgb(255, 182, 45);
+    border-color: rgb(255, 182, 45);
+    box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
+    margin-left: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 200px;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-size: large;
+    text-align: center; 
+}        
+.button2:hover{
+    width: 210px;
+}
+
+/*fin section 2*/
+
+/*début section 3*/
+#section3{     
+    background-image: url("illustration_chef.jpg");
+    background-size: 140%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: a;
+    z-index: 3;
+}
+.vidéo{ 
+   
+    padding-top: 50px;
+    padding-left: 8%;
+    width: 20%;
+    position: absolute;
+    cursor: pointer;
+
+}  
+.bouton_play{
+
+    float: left;
+    width: 3%;
+    padding-top: 120px;
+    padding-left: 17%;
+    position: relative; 
+}
+.souligne2{
+   float: left;
+   position: absolute;
+}
+#section3 h1{
+    font-family: "volkhov bold"; 
+    font-size: 84px;  
+    padding-top: 300px;
+    color:white;
+    font-size: 70px;
+}
+#section3 h1, p{
+    padding-left: 10%;
+}
+#section3 p{
+    padding-top: 30px;
+    color:white;
+    font-family:  "poppins regular";
+    line-height: 2em;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+.illustration_endroit{ 
+        position: absolute;
+        height: 652px;
+        width: 100%;
+        z-index: 1;
+     }
+
+/*fin section 3*/
+
+ /*début section4*/
+#section4{ 
+    padding-top: 350px;
+        background-image: url("illustration_commander.jpg");
+        position: relative;
+        background-size: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+#section4 h3{
+    margin-left: 8%;
+    padding-top: 50px;
+    font-family: "poppins regular";
+    font-size: 18px;
+    font-weight: 600;
+    color:#5e6282;
+}
+#section4 h1{ 
+    margin-left: 8%;
+    font-family: "volkhov bold";
+    font-size: 50px;
+    font-weight: 400; 
+}
+#section4 ul li{
+    list-style-type: none;
+    margin-top: 60px;
+    margin-left: 15%;
+    font-family: "poppins regular";
+    font-size: 16px;
+    color: #3e3f43;
+}
+.button3{
+        background-color: rgb(255, 182, 45);
+        border-color: rgb(255, 182, 45);
+        box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 200px;
+        color: white;
+        border-radius: 20px;
+        font-family: "opensans-regular.woff";
+        font-size: large;       
+}
+.button3:hover{
+    width: 210px;
+}
+    /*fin section 4
+    /*début section5*/
+#section5 h1{
+        font-family: "poppins-bold.woff";
+        text-align: center;  
+        font-size: 50px;
+        color: #14183e;
+        padding-bottom: 30px;
+}
+#section5 h3{
+        font-family: "poppins regular";
+        font-size: 18px;
+        color: #5e6282;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+}
+#section5 h4{
+    font-family: "poppins regular";
+    font-size: 18px;
+    color: black;
+    line-height: 3em;
+}
+#section5 p{
+    font-family: "poppins regular";
+    font-size: 14px;
+    color:#868686;
+}
+.formulaire{
+        line-height: 2em;
+}
+.remplir_formulaire{
+        line-height: 1em;
+    }
+form{
+    line-height: 3em;
+    font-size: 20px;  
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.image_formulaire{
+    padding-right: 0px;
+    float: right;  
+    width: 470px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;  
+    height: 625px; 
+    padding-left: 10px;
+}
+#réservation_contact{
+   border-style:none;
+   border-color: rgba(255, 252, 252, 0.589);
+   border-bottom: 50px;
+   border-radius: 25px;
+   box-shadow: 8px 8px 8px 8px rgb(239, 239, 243);
+    margin-right: 300px;  
+    margin-left: 300px; 
+    margin-bottom: 100px;
+    padding-left: 50px;
+}
+.bouton_envoyer_formulaire{
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    background-color: rgb(40, 71, 250);
+    border: none;
+    box-shadow: 0px 10px 10px 1px rgba(131, 155, 235, 0.637);
+    font-size: larger;
+    color: white;
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+} 
+footer{
+        margin-top: 10px;
+        background-color: rgb(241, 240, 240);
+        padding-top: 50px;
+        padding-bottom: 5px;  
+}
+.footer_logo{
+        float: left;
+        margin-left: 12%;
+        margin-right: 10%;
+        font-size: 16px;
+        color:rgb(167, 167, 167);
+}
+footer>h3{
+    font-family: "poppins regular";
+    font-size: 18px;
+    color: #5e6282;
+}
+.lien_complet_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo_uberEats2{
+    width: 200px;
+}
+footer p{
+    
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #5e6282;
+}
+footer a{
+    font-family: "poppins regular";
+    font-size: 18px;
+    text-decoration: none;
+    color: #5e6282;
+    line-height: 2em;
+}
+footer h3{
+    font-family: "poppins bold";
+    font-size: 21px;
+    line-height: 2em;
+}
+.bouton_google_play, .bouton_apple{
+    background-color: #000000;
+    border:#000000;
+    border-radius: 25px;
+    margin-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color:antiquewhite;
+}
+footer p{ font-family: "poppins regular";
+    font-size: 14px;
+    text-align: center;
+    color:rgb(110, 110, 110);
+}
+
+
+    
+         
+
+
+
+
+
