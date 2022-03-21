@@ -195,19 +195,21 @@ article{  font-family: "poppins regular";
     flex-wrap: wrap;
     margin-bottom: 50px;
     align-content: center;
-    align-items: baseline;
+   
     margin-left: 17% ;
 }
 .maki { 
     font-size: 16px;
     line-height: 2em;
     font-family: "poppins regular";
-    color: #5e6282;
+    color: #5e6282; 
+    text-align: center;
 }
 .maki h6{
     font-family: "open sans regular2";
     font-size: 20px;
     line-height: 3em;
+   
 }
 .photo{
     border-radius: 25px 25px 0px 0px;
@@ -216,15 +218,13 @@ article{  font-family: "poppins regular";
     width:20%;
     padding-top: 20px;
     padding-bottom: 30px;
-    text-align: center; 
+ 
 }
 .photo4{
     width:20%;
     padding-top: 20px;
-    text-align: center; 
     padding-bottom: 60px;
 }
-
 .photo1:hover, .photo2:hover,.photo3:hover, .photo4:hover{
     border-radius: 25px 25px 25px 25px;
     box-shadow: 4px 4px 4px 4px rgb(239, 239, 243);
@@ -385,6 +385,7 @@ article{  font-family: "poppins regular";
         margin-bottom: 10px;
         text-align: center;
 }
+/* renseignements formulaire*/
 #section5 h4{
     font-family: "poppins regular";
     font-size: 18px;
@@ -396,7 +397,7 @@ article{  font-family: "poppins regular";
     font-size: 14px;
     color:#868686;
 }
-/* débu formulaire*/
+/* début champs formulaire*/
 .formulaire{
         line-height: 2em;
 }
@@ -424,7 +425,6 @@ input:focus {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;  
     height: 610px; 
-    padding-left: 10px;
 }
 #réservation_contact{
    border-style:none;
@@ -449,6 +449,7 @@ input:focus {
     width: 160px;
     height: 60px;
     border-radius: 10px;
+    cursor: pointer;
 } 
 footer{
         margin-top: 10px;
