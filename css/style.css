@@ -411,8 +411,12 @@ input{
     border-top: none;
     border-left: none;
     border-right: none;
+    text-decoration: none;
 }
-
+input:focus {
+    outline:  none;
+    border-bottom-color: rgb(38, 121, 189);
+}
 .image_formulaire{
     padding-right: 0px;
     float: right;  
