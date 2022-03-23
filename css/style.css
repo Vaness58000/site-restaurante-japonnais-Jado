@@ -6,7 +6,7 @@
 header {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-content: space-between;
         justify-content: space-around;
         background-color: white;
@@ -29,7 +29,7 @@ header #logo{
         transition: all 0.2s ease-in-out;
     }
 #logo:hover img:first-child {
-        animation: logo-animation 1.5s ease-in;
+        animation: logo-animation 0.5s ease-in;
     } 
 @keyframes logo-animation{
     20% {
@@ -37,6 +37,10 @@ header #logo{
     40% {
         transform: rotate(-15deg) ;
 }
+}
+.menu_bouton_burger{
+    opacity: 0%;
+    
 }
 li a{
     font-family: Arial, Helvetica, sans-serif;
@@ -124,7 +128,9 @@ article{  font-family: "poppins regular";
     color: #ffff;
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;}
+    font-size: 18px;
+    transition: transform 0.2s;
+}
 .button:hover{
     width: 210px;
 }
@@ -133,8 +139,6 @@ article{  font-family: "poppins regular";
 /*début section 2*/
 #section2{
     padding-top: 2%;
-    display: block;
-    justify-content: space-around;
 }
 .decor1{
     float: right;
@@ -204,7 +208,6 @@ article{  font-family: "poppins regular";
 /*--photo maki+titre*/
 #conteneur_maki{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;    
     align-items: center;
     margin-bottom: 50px;
@@ -218,8 +221,8 @@ article{  font-family: "poppins regular";
 }
 .photo1,.photo2, .photo3{
     padding-top: 20px;
-    padding-left: 45px;
-    padding-right:45px;
+    padding-left: 40px;
+    padding-right:40px;
     font-size: 16px;
     line-height: 2em;
     font-family: "poppins regular";
@@ -236,11 +239,14 @@ article{  font-family: "poppins regular";
     color: #5e6282; 
     text-align: center;
 }
+.photo1.photo2.photo3.photo4{
+    animation: deco-sushi 1s ease-in;
+    background-image: url("img/decoration_rose.svg");
+}
 .photo1:hover, .photo2:hover,.photo3:hover, .photo4:hover{
     border-radius: 25px 25px 25px 25px;
     box-shadow: 4px 4px 4px 4px rgb(239, 239, 243);
 }
-
 .button2{
     background-color: rgb(255, 182, 45);
     border-color: rgb(255, 182, 45);
@@ -256,7 +262,6 @@ article{  font-family: "poppins regular";
     border-radius: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    font-size: large;
     text-align: center; 
 }        
 .button2:hover{
@@ -408,6 +413,7 @@ article{  font-family: "poppins regular";
     color:#868686;
 }
 /* début champs formulaire*/
+
 .formulaire{
     line-height: 2em;
 }
@@ -437,15 +443,13 @@ input:focus {
     height: 610px; 
 }
 #conteneur_formulaire{
-    border-style:none;
-    border-color: rgba(255, 252, 252, 0.589);
-    border-bottom: 50px;
-    border-radius: 25px;
-    box-shadow: 8px 8px 8px 8px rgb(239, 239, 243);
-    margin-right: 450px;  
-    margin-left: 450px; 
-    margin-bottom: 100px;
-    padding-left: 50px;
+        display: table;
+        width: 100%;
+        box-shadow: 0px 4px 61px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        max-width: 1020px;
+        margin: auto;
+        padding-left: 25px;
 }
 .bouton_envoyer_formulaire{
     margin-top: 50px;
@@ -456,13 +460,13 @@ input:focus {
     box-shadow: 0px 10px 10px 1px rgba(131, 155, 235, 0.637);
     font-size: larger;
     color: white;
-    width: 160px;
+    width: 250px;
     height: 60px;
     border-radius: 10px;
     cursor: pointer;
 } 
 footer{
-    margin-top: 10px;
+    margin-top: 50px;
     background-color: rgb(241, 240, 240);
     padding-top: 50px;
     padding-bottom: 5px;  
