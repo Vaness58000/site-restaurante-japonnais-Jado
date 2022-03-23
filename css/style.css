@@ -18,10 +18,25 @@ header {
         padding: 20px 0;   
 }
 header nav ul {
+    
         display: flex;
         align-items: center;
+        margin: 0;
         height: 100%;
         list-style-type: none;
+}
+header #logo{
+        transition: all 0.2s ease-in-out;
+    }
+#logo:hover img:first-child {
+        animation: logo-animation 1.5s ease-in;
+    } 
+@keyframes logo-animation{
+    20% {
+        transform: rotate(15deg);}
+    40% {
+        transform: rotate(-15deg) ;
+}
 }
 li a{
     font-family: Arial, Helvetica, sans-serif;
@@ -44,7 +59,8 @@ header nav ul a{
         margin-right: 25px;
 }
 .menu1:hover{
-        text-decoration: underline;}
+        text-decoration: underline;
+}
 .menu2:hover{
         text-decoration: underline;
 }
@@ -55,15 +71,10 @@ header nav ul a{
 .menu4:hover{
         text-decoration: underline;
 }
-
 /*haut/menu fin*/
 
 /*début section 1*/
-#section1{
-    text-align: left;
-}
 .welcome{
-   
     background-image: url("illustration_principale.jpg");
     background-size: 115%;
     background-repeat: no-repeat;
@@ -86,7 +97,6 @@ header nav ul a{
     line-height: 1em;
     color:#ffffff;
 }
-
 .souligne{
     float: left;
     position: absolute;
@@ -118,8 +128,7 @@ article{  font-family: "poppins regular";
 .button:hover{
     width: 210px;
 }
-
- /*fin de section 1*/
+/*fin de section 1*/
 
 /*début section 2*/
 #section2{
@@ -148,8 +157,7 @@ article{  font-family: "poppins regular";
 }
 
 /*--photo plat+titre*/
-#image{  
-    
+#image{    
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     text-align: center;
@@ -167,8 +175,7 @@ article{  font-family: "poppins regular";
     align-content: center;
     margin-bottom: 50px;
     justify-content: center;
-    align-items: stretch; 
-        
+    align-items: stretch;      
 }
 .image1, .image2, .image3{
     margin-right: 25px;
@@ -209,13 +216,10 @@ article{  font-family: "poppins regular";
     font-size: 20px;
     line-height: 3em;
 }
-.photo{
-    border-radius: 25px 25px 0px 0px;
-}
 .photo1,.photo2, .photo3{
-    width:13%;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-left: 45px;
+    padding-right:45px;
     font-size: 16px;
     line-height: 2em;
     font-family: "poppins regular";
@@ -223,9 +227,9 @@ article{  font-family: "poppins regular";
     text-align: center;
 }
 .photo4{
-    width:13%;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-left: 45px;
+    padding-right:45px;
     font-size: 16px;
     line-height: 2em;
     font-family: "poppins regular";
@@ -236,6 +240,7 @@ article{  font-family: "poppins regular";
     border-radius: 25px 25px 25px 25px;
     box-shadow: 4px 4px 4px 4px rgb(239, 239, 243);
 }
+
 .button2{
     background-color: rgb(255, 182, 45);
     border-color: rgb(255, 182, 45);
@@ -257,7 +262,6 @@ article{  font-family: "poppins regular";
 .button2:hover{
     width: 210px;
 }
-
 /*fin section 2*/
 
 /*début section 3*/
@@ -269,7 +273,7 @@ article{  font-family: "poppins regular";
     background-repeat: no-repeat;
     padding: 0px;
     padding-bottom: 400px;
-    }
+}
 .vidéo{ 
    
     padding-top: 50px;
@@ -333,7 +337,7 @@ article{  font-family: "poppins regular";
     background-size: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    }
+}
 #section4 h3{
     margin-left: 8%;
     padding-top: 50px;
@@ -409,7 +413,7 @@ article{  font-family: "poppins regular";
 }
 .remplir_formulaire{
     line-height: 1em;
-    }
+}
 form{
     line-height: 3em;
     font-size: 20px;  
@@ -484,7 +488,6 @@ footer>h3{
     width: 200px;
 }
 footer p{
-    
     font-size: 18px;
     line-height: 26px;
     text-align: center;
@@ -510,7 +513,6 @@ footer h3{
     padding-left: 20px;
     padding-right: 20px;
 }
-
 span{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
@@ -521,7 +523,6 @@ footer p{ font-family: "poppins regular";
     text-align: center;
     color:rgb(110, 110, 110);
 }
-
 
     
          
