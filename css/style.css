@@ -528,7 +528,56 @@ footer p{ font-family: "poppins regular";
     color:rgb(110, 110, 110);
 }
 
-    
+/*media queries tablette min 780px max 979px*/
+@media screen and (min-width: 780px) and (max-width: 979px){
+    .welcome{
+        background-size: 175%;      
+    }
+    .welcome p {
+        padding-top: 20px;
+        padding-left: 30px;    
+    }
+    .welcome h1{
+        margin-left: 30px;
+        font-size: 66px;
+    }
+    .souligne{
+        top: 415px;
+        margin-left: 12px;
+        width: 40%;
+    }
+    article{  
+        font-size: 16px;
+        line-height: 2em;
+        padding-top: 20px;
+        margin-left: 8%;
+    }.button{
+       
+        margin-top: 4%;
+        margin-bottom: 100px;
+    }
+    #section2 h3{
+        font-size: 15px;
+        margin-top: 3%;
+        text-align: center;
+        padding-left: 100px;
+    }
+    #section2 h1{
+ 
+        font-size: 40px; 
+    }
+    .decoration_filet{
+        width: 6%;
+        position: absolute;
+        padding-top: 800px;
+    }
+    #conteneur_maki{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        padding-left: 20px;
+    }
+}
          
 
 
