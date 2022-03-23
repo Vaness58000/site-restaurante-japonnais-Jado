@@ -65,8 +65,6 @@ header nav ul a{
     background-size: 115%;
     background-repeat: no-repeat;
 }
-
-
 .welcome p {
     padding-top: 50px;
     padding-left: 160px ;
@@ -446,7 +444,7 @@ input:focus {
     margin-top: 50px;
     margin-left: 150px;
     margin-bottom: 50px;
-    background-color: rgb(40, 71, 250);
+    background-color: rgb(49, 78, 243);
     border: none;
     box-shadow: 0px 10px 10px 1px rgba(131, 155, 235, 0.637);
     font-size: larger;
@@ -520,11 +518,7 @@ footer p{ font-family: "poppins regular";
     text-align: center;
     color:rgb(110, 110, 110);
 }
-@media (max-width: 656px){
-    .welcome{
-    max-width: 100%;
- max-height: 100%;
-}
+
 .welcome p {
     padding-top: 20px;
     font-family: "poppins bold2";
@@ -548,6 +542,7 @@ footer p{ font-family: "poppins regular";
     top: 501px;
     margin-left: 8%;
 }
+
 article{  font-family: "poppins regular";
     color: rgb(214, 211, 211);
     font-size: 20px;
@@ -572,9 +567,6 @@ article{  font-family: "poppins regular";
 .button:hover{
     width: 210px;
 }
-
-}
-
 
     
          
