@@ -7,7 +7,7 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-content: space-between;
+        align-content: space-around;
         justify-content: space-around;
         background-color: white;
         width: 100%;
@@ -116,6 +116,7 @@ article{  font-family: "poppins regular";
     margin-left: 8%;
 }
 .button{
+   
     background-color: rgb(255, 182, 45);
     border-color: rgb(255, 182, 45);
     box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
@@ -247,7 +248,9 @@ article{  font-family: "poppins regular";
     border-radius: 25px 25px 25px 25px;
     box-shadow: 4px 4px 4px 4px rgb(239, 239, 243);
 }
-.button2{
+.button2{ 
+    display: block;
+    width: center;
     background-color: rgb(255, 182, 45);
     border-color: rgb(255, 182, 45);
     box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
@@ -303,6 +306,7 @@ article{  font-family: "poppins regular";
    left: 200px;
    z-index:2;
 }
+
 #section3 h1{
     font-family: "volkhov bold"; 
     font-size: 84px;  
@@ -527,6 +531,7 @@ footer p{ font-family: "poppins regular";
     text-align: center;
     color:rgb(110, 110, 110);
 }
+/*media queries portable min 400px max 979px*/
 
 /*media queries tablette min 780px max 979px*/
 @media screen and (min-width: 780px) and (max-width: 979px){
@@ -578,9 +583,342 @@ footer p{ font-family: "poppins regular";
         padding-left: 20px;
     }
 }
-         
+@media screen and (min-width: 360px) and (max-width: 779px){
+    li{
+        display: none;
+    }
+    .menu_bouton_burger{
+        opacity: none;
+    }
 
-
-
-
-
+    .welcome{
+        background-size: 1500px;
+    }.welcome p {
+        padding-top: 50px;
+        padding-left: 30px; 
+        padding-bottom: 50px;
+        line-height: 1em; 
+        text-align: center;
+    }
+    .welcome h1{
+        margin-left: 30px;
+        font-size: 46px;
+        text-align: center;
+    }
+    .souligne{
+        top: 360px;
+        margin-left: 125px;
+        width: 40%;
+    }
+    article{  
+        font-size: 14px;
+        line-height: 2em;
+        padding-top: 50px;
+        margin-left: 8%;
+        padding-bottom: 20px;
+    }.button{
+       
+        margin-top: 4%;
+        margin-bottom: 100px;
+    }
+    #section2 h3{
+        font-size: 15px;
+        margin-top: 3%;
+        text-align: center;
+        padding-left: none;
+    }
+    #section2 h1{
+ 
+        font-size: 40px; 
+    }
+    .decoration_filet{
+        opacity: 0%;
+    }
+    .decor1{
+        display: none;
+    }
+    .button2{
+    display: block;
+    width: center; 
+    }      
+    #section3{     
+        background-image: none;
+    }
+    .vidéo{ 
+        padding-top: 30px;
+        padding-left: 0%;
+        width: 100%;
+        position: absolute;
+        cursor: pointer;
+    }  
+    .bouton_play{
+    
+        float: left;
+        width: 20%;
+        padding-top: 90px;
+        left: 42%;
+        position: relative; 
+        cursor: pointer;
+    }
+    .souligne2{
+       opacity: 0%;
+    }
+    #section3 h1{
+        opacity: 0%;
+    }
+    #section3 p{
+        opacity: 0%;
+    }
+    #section3 p{
+        display: none;
+    }
+    .illustration_endroit{
+        position: relative;
+        z-index: 1;
+        left:0;
+        bottom: -1002px;
+    }
+    #section4{ 
+        padding-top: 350px;
+        background-image: url("illustration_commander.jpg");
+        position: relative;
+        background-size: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    #section4 h3{
+        margin-left: 8%;
+        padding-top: 50px;
+        font-family: "poppins regular";
+        font-size: 18px;
+        font-weight: 600;
+        color:#5e6282;
+    }
+    #section4 h1{ 
+        margin-left: 8%;
+        font-family: "volkhov bold";
+        font-size: 50px;
+        font-weight: 400; 
+    }
+    #section4 ul li{
+        list-style-type: none;
+        margin-top: 60px;
+        margin-left: 13%;
+        font-family: "poppins regular";
+        font-size: 16px;
+        color: #3e3f43;
+    }
+    .button3{
+        background-color: rgb(255, 182, 45);
+        border-color: rgb(255, 182, 45);
+        box-shadow: 0px 20px 20px rgba(248, 193, 92, 0.226);
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 200px;
+        color: white;
+        border-radius: 20px;
+        font-family: "opensans regular";
+        font-size: large;       
+    }
+    .button3:hover{
+        width: 210px;
+    }
+        /*fin section 4
+        /*début section5*/
+    #section5 h1{
+        font-family: "poppins-bold.woff";
+        text-align: center;  
+        font-size: 50px;
+        color: #14183e;
+        padding-bottom: 30px;
+        margin-bottom: 50px;
+    }
+    #section5 h3{
+        font-family: "poppins regular";
+        font-size: 18px;
+        color: #5e6282;
+        margin-top: 70px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    /* renseignements formulaire*/
+    #section5 h4{
+        font-family: "poppins regular";
+        font-size: 18px;
+        color: black;
+        line-height: 3em;
+    }
+    #section5 p{
+        font-family: "poppins regular";
+        font-size: 14px;
+        color:#868686;
+    }
+    /* début champs formulaire*/
+    
+    .formulaire{
+        line-height: 2em;
+    }
+    .remplir_formulaire{
+        line-height: 1em;
+    }
+    form{
+        line-height: 3em;
+        font-size: 20px;  
+    }
+    .image_formulaire{
+        display: none;
+    }
+    #conteneur_formulaire{
+            display: table;
+            flex-wrap: nowrap;
+            width: 20%;
+            box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+            border-radius: none;
+            max-width: 100px;
+            margin: none;
+            padding-left: 0px;
+            padding-right: 0px;
+    }
+    .bouton_envoyer_formulaire{
+        margin-left: 40px;
+    } 
+    footer{
+        margin-top: 50px;
+        background-color: rgb(241, 240, 240);
+        padding-top: 50px;
+        padding-bottom: 5px;  
+    }
+    .footer_logo{
+        float: left;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 16px;
+        color:rgb(167, 167, 167);
+    }
+    footer>h3{
+        font-family: "poppins regular";
+        font-size: 18px;
+        color: #5e6282;
+    }
+    .lien_complet_footer{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+    }
+    .logo_uberEats2{
+        width: 200px;
+    }
+    footer p{
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #5e6282;
+    }
+    footer a{
+        font-family: "poppins regular";
+        font-size: 18px;
+        text-decoration: none;
+        color: #5e6282;
+        line-height: 2em;
+    }
+    footer h3{
+        font-family: "poppins bold";
+        font-size: 21px;
+        line-height: 2em;
+    }
+    .bouton_google_play, .bouton_apple{
+        background-color: #000000;
+        border:#000000;
+        border-radius: 25px;
+        margin-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    span{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color:antiquewhite;
+    }
+    footer p{ font-family: "poppins regular";
+        font-size: 14px;
+        text-align: center;
+        color:rgb(110, 110, 110);
+    }
+    }
+    @media screen and (min-width: 1377px) and (max-width: 1571px){
+        #section4{ 
+            width: 150%;
+        }
+    }
+    @media screen and (min-width: 1041px) and (max-width: 1376px){  
+        #section3{     
+          
+            padding: 0px;
+            padding-bottom: 0px;
+        }
+        .vidéo{ 
+           
+            padding-top: 50px;
+            padding-left: 10%;
+            width: 20%;
+            position: absolute;
+            cursor: pointer;
+        }  
+        .bouton_play{
+        
+            float: left;
+            width: 4%;
+            padding-top: 100px;
+            left: 18%;
+            position: relative; 
+            cursor: pointer;
+        }
+        .souligne2{
+           float: left;
+           position: absolute;  
+           top: 370px;
+           left: 200px;
+           z-index:2;
+        }
+        
+        #section3 h1{
+            font-family: "volkhov bold"; 
+            font-size: 84px;  
+            padding-top: 300px;
+            color:white;
+            font-size: 70px;
+        }
+        #section3 h1, p{
+            padding-left: 10%;
+        }
+        #section3 p{
+            padding-top: 30px;
+            padding-bottom: 20px;
+            color:white;
+            font-family:  "poppins regular";
+            line-height: 2em;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        .illustration_endroit{
+            position: absolute;
+            padding-top: 20px;
+            width:100%;
+            z-index: 3;
+            left:0;
+            bottom: -335px;
+        }
+        /*fin section 3*/
+        
+         /*début section4*/
+        #section4{ 
+           
+            background-size: 150%;
+           
+        }}
+        
+            /*fin section 4
