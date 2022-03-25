@@ -484,12 +484,21 @@ footer{
     margin-left: 12%;
     margin-right: 10%;
     font-size: 16px;
-    color:rgb(167, 167, 167);
+    color:#5e6282;
 }
-footer>h3{
+.footer_logo h4{
+    padding-top: 20px;
     font-family: "poppins regular";
     font-size: 18px;
-    color: #5e6282;
+    font-weight: 500;
+}
+footer h3{
+    font-family: "poppins bold";
+    line-height: 21px;
+    font-weight: 500;
+    line-height: 31px;
+    font-size: 18px;
+    color: #000000;
 }
 .lien_complet_footer{
     display: flex;
@@ -499,23 +508,27 @@ footer>h3{
 .logo_uberEats2{
     width: 200px;
 }
-footer p{
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    color: #5e6282;
-}
+
 footer a{
     font-family: "poppins regular";
     font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
     text-decoration: none;
     color: #5e6282;
     line-height: 2em;
 }
-footer h3{
-    font-family: "poppins bold";
-    font-size: 21px;
-    line-height: 2em;
+.découvrir:hover{
+    text-decoration: underline;
+}
+.nouveau:hover{
+    text-decoration: underline;
+}
+.commander_footer:hover{
+    text-decoration: underline;
+}
+.rdv:hover{
+    text-decoration: underline;
 }
 .bouton_google_play, .bouton_apple{
     background-color: #000000;
@@ -841,7 +854,6 @@ footer p{ font-family: "poppins regular";
         #section4{    
             background-size: 180%;
         }
-        
         .image_formulaire{  
             height: 610px; 
         }
@@ -856,6 +868,21 @@ footer p{ font-family: "poppins regular";
         } 
         .image_formulaire{
             width: 50%
+        }.logo_uberEats2{
+            width: 200px;
+        }
+        .footer_logo{
+            float: left;
+            margin-left: 2%;
+            margin-right: 1%;
+        }
+        .footer_liens2{
+            padding-left: 30px;
+        }
+        .footer_lien{
+            padding-left: 20px;
+        }  .telechargement_appli{
+            padding-left: 30px ;
         }
     }
     @media screen and (min-width: 884px) and (max-width: 1039px){
@@ -872,23 +899,12 @@ footer p{ font-family: "poppins regular";
         .decoration_filet{
             opacity: 0%;
         }
-        .footer_logo{
-            float: left;
-            margin-left: 12%;
-            margin-right: 10%;
-            font-size: 16px;
-            color:rgb(167, 167, 167);
-        }
         footer>h3{
             font-family: "poppins regular";
             font-size: 18px;
             color: #5e6282;
         }
-        .lien_complet_footer{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }.welcome{
+    .welcome{
             background-size: 160%;} 
         #section3{     
             padding: 0px;
@@ -900,7 +916,7 @@ footer p{ font-family: "poppins regular";
         }
         .souligne2{
           width: 30%;
-           top: 270px;
+            top: 270px;
            left: 220px;
         }
         #section3>h1{
@@ -943,14 +959,24 @@ footer p{ font-family: "poppins regular";
         }
         .footer_logo{
             float: left;
-            margin-left: 10%;
+            margin-left: 2%;
             margin-right: 1%;
-            font-size: 16px;
-            color:rgb(167, 167, 167);
+      
+        } .logo_uberEats2{
+            width: 200px;
+        }
+        .footer_liens2{
+            padding-left: 50px;
+        }
+        .footer_lien{
+            padding-left: 20px;
+        }
+        .telechargement_appli{
+            padding-left: 30px ;
         }
     }
- 
-    @media screen and (min-width: 780px) and (max-width: 883px){
+
+    @media screen and (min-width: 660px) and (max-width: 883px){
         li{
             display: none;
         }
@@ -1000,27 +1026,52 @@ footer p{ font-family: "poppins regular";
             }
             #conteneur_formulaire{
                 width: 60%;
-                padding-left: 200px;
+                padding-left: 100px;
                 padding-right: 200px;
+                justify-content: center;
             }
             .bouton_envoyer_formulaire{
                 display: block;
-                margin-left: 0%; 
-                margin-right: 0%;
-                padding-right: 10px;
+                justify-content: center;
             } 
             .image_formulaire{
                 display: none;
             }
             .footer_logo{
-                float: left;
-                margin-left: 10%;
-                margin-right: 1%;
-                font-size: 16px;
-                color:rgb(167, 167, 167);
+               margin-left: 30%;
+               padding-bottom: 20px;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;  
+            }
+            footer h3{
+                display: flex;
+                
+            }
+            .lien_complet_footer{
+                margin-left: 20%;
+            }          
+            .footer_lien{
+                padding-right: 10px;
+            }
+            .footer_liens2{
+                padding-left: 2px;
+                padding-right: 40px;
+            }
+            .telechargement_appli{
+                text-align: center;
+                padding-top: 30px;
+            }
+            footer p{
+                padding-top: 10px;
+                padding-bottom: 2px;
+                text-align: center;
             } 
+            
     }
-    @media screen and (min-width: 883px) and (max-width: 957px){
+    @media screen and (min-width: 884px) and (max-width: 957px){
         #conteneur_formulaire{
             width: 40%;
             margin-left: 100px;
@@ -1030,23 +1081,14 @@ footer p{ font-family: "poppins regular";
         .bouton_envoyer_formulaire{
             display: block;
             margin-left: 80px; 
-            margin-right: 10px;
-            padding-right: 8px;
-        } 
+        }  
         .image_formulaire{
             display: none;
         }
          #section5 h4{
-                font-family: "poppins regular";
-                font-size: 18px;
-                color: black;
-                line-height: 3em;
                 text-align: center;
             }
             #section5 p{
-                font-family: "poppins regular";
-                font-size: 14px;
-                color:#868686;
                 text-align: center;
             }
     footer{
@@ -1057,16 +1099,8 @@ footer p{ font-family: "poppins regular";
         padding-bottom: 5px;  
     }
     .footer_logo{
-        float: left;
-        margin-left: 12%;
-        margin-right: 10%;
-        font-size: 16px;
-        color:rgb(167, 167, 167);
-    }
-    footer>h3{
-        font-family: "poppins regular";
-        font-size: 18px;
-        color: #5e6282;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     .lien_complet_footer{
         display: flex;
@@ -1079,53 +1113,13 @@ footer p{ font-family: "poppins regular";
     .footer_logo{
         padding-left: 10px;
     }
-    footer p{
-        font-size: 18px;
-        line-height: 26px;
-        text-align: center;
-        color: #5e6282;
-    }
-    footer a{
-        font-family: "poppins regular";
-        font-size: 18px;
-        text-decoration: none;
-        color: #5e6282;
-        line-height: 2em;
-    }
-    footer h3{
-        font-family: "poppins bold";
-        font-size: 21px;
-        line-height: 2em;
-    }
-    .bouton_google_play, .bouton_apple{
-        background-color: #000000;
-        border:#000000;
-        border-radius: 25px;
-        margin-top: 25px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    span{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
-        color:antiquewhite;
-    }
-    footer p{ font-family: "poppins regular";
-        font-size: 14px;
-        text-align: center;
-        color:rgb(110, 110, 110);
-    }
     .footer_liens2{
-        padding-left: 10px;
+        padding-left: 30px;
     }
     .footer_lien{
-        padding-left: 10px;
-    }
-    .telechargement_appli{
-        padding-top: 50px;
         padding-left: 20px;
-        display: block;
-        justify-content: center;
+    }  .telechargement_appli{
+        padding-left: 30px ;
     }
 }
     
