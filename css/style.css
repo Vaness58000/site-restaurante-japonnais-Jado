@@ -1,3 +1,4 @@
+
 *{
     margin: 0% 0% 0%;
 }
@@ -330,8 +331,8 @@ article{  font-family: "poppins regular";
     position: absolute;
     padding-top: 20px;
     width:100%;
+    height: auto;
     z-index: 3;
-    left:0;
     bottom: -335px;
 }
 /*fin section 3*/
@@ -341,7 +342,7 @@ article{  font-family: "poppins regular";
     padding-top: 350px;
     background-image: url("illustration_commander.jpg");
     position: relative;
-    background-size: 100%;
+    background-size: 140%;
     width: 100%;
     background-repeat: no-repeat;
 }
@@ -552,7 +553,6 @@ footer p{ font-family: "poppins regular";
     text-align: center;
     color:rgb(110, 110, 110);
 }
-
 @media screen and (min-width: 360px) and (max-width: 779px){
     li{
         display: none;
@@ -705,6 +705,12 @@ footer p{ font-family: "poppins regular";
         height: auto;
         position: absolute;
         cursor: pointer;
+    }
+    .chef{
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: auto;
     }  
     .bouton_play{
         float: left;
@@ -727,11 +733,6 @@ footer p{ font-family: "poppins regular";
         display: none;
     }#section3{     
         background-image: none;
-    }
-    .chef{
-        position: relative;
-        width: 100%;
-        height: auto;
     }
     .illustration_endroit{
         position: relative;
@@ -873,9 +874,6 @@ footer p{ font-family: "poppins regular";
             padding-left: 120px;
             text-align: left;
         } 
-        .chef{
-            display: none;
-        }
     }
     @media screen and (min-width: 1041px) and (max-width: 1376px){ 
         .welcome{
@@ -950,9 +948,17 @@ footer p{ font-family: "poppins regular";
     @media screen and (min-width: 884px) and (max-width: 1192px){
     .image1, .image2{
         margin-left: 50px;
-        margin-bottom: 50px;
-    }
-    
+        margin-bottom: 50px;}  
+        .photo_endroit1{
+            float:left;
+            width: 50%;
+            height: auto;
+        }
+        .photo_endroit2{
+            float: right;
+            width: 50%;
+            height: auto;
+        } 
 }
     @media screen and (min-width: 884px) and (max-width: 1039px){
         li{
@@ -1053,19 +1059,22 @@ footer p{ font-family: "poppins regular";
     }
 
     @media screen and (min-width: 780px) and (max-width: 883px){
-        li{
+            li{
             display: none;
-        }
-        .menu_bouton_burger{
+            }
+            .menu_bouton_burger{
             display: flex;
             justify-content: end;
-        } .welcome{
+            } 
+            .welcome{
             background-size: 190%;} 
             .welcome p {
       
                 padding-left: 8%;
             }
             .illustration_endroit{
+                width: 100%;
+                height: auto;
                 bottom: -185px;
             }
             #section3{     
@@ -1081,11 +1090,11 @@ footer p{ font-family: "poppins regular";
                top: 270px;
                left: 220px;
             }
-               .conteneur_plat{
-                   display:flex;
-                   flex-wrap: nowrap;
+            .conteneur_plat{
+                display:flex;
+                flex-wrap: nowrap;
                }
-               .decoration_filet{
+            .decoration_filet{
                 display: none;
             }
             .decor1{
@@ -1110,24 +1119,6 @@ footer p{ font-family: "poppins regular";
                 left: 200px;
                 z-index:2;
              }
-             .illustration_endroit{
-                position: absolute;
-                padding-top: 20px;
-                width:100%;
-                z-index: 3;
-                left:0;
-                bottom: -335px;
-            }
-            .photo_endroit1{
-                float:left;
-                width: 50%;
-                height: auto;
-            }
-            .photo_endroit2{ 
-                float: right;
-                width: 50%;
-                height: auto;
-            }
             #section4{ 
                 padding-top: 350px;
                 background-image: url("illustration_commander.jpg");
@@ -1224,7 +1215,6 @@ footer p{ font-family: "poppins regular";
                 transform: translateX(-50%);
             }
         }
-
         .image1{
             animation: animation-carte1 15s infinite;
         }
@@ -1327,8 +1317,6 @@ footer p{ font-family: "poppins regular";
            
     }
     @media screen and (min-width: 884px) and (max-width: 957px){
-
-      
         #conteneur_formulaire{
             width: 40%;
             margin-left: 100px;
@@ -1391,7 +1379,8 @@ footer p{ font-family: "poppins regular";
             justify-content: center;
         }      
         .illustration_endroit{
-            bottom: -145px;
+            width:100%;
+            height: auto;
         }
         #conteneur_formulaire{
             width: 10%;
@@ -1476,8 +1465,7 @@ footer p{ font-family: "poppins regular";
             top: 290px;
             left: 200px;
             z-index:2;
-            }
-            
+            }           
             #section3 h1{
                 font-family: "volkhov bold"; 
                 font-size: 84px;  
@@ -1503,7 +1491,7 @@ footer p{ font-family: "poppins regular";
             }
     }
     @media screen and (min-width: 884px) and (max-width: 982px){
-        .footer_logo{
+   .footer_logo{
             text-align: center;
             padding-bottom: 40px;
         }
@@ -1513,8 +1501,7 @@ footer p{ font-family: "poppins regular";
             padding-bottom: 10px;  
         }
         footer h3{
-            display: flex;
-            
+            display: flex;     
         }
         .lien_complet_footer{
             margin-left: 10%;
@@ -1534,8 +1521,5 @@ footer p{ font-family: "poppins regular";
             padding-top: 10px;
             padding-bottom: 2px;
             text-align: center;
-        } 
-        
+        }   
     }
-    
-        
