@@ -141,7 +141,8 @@ article{  font-family: "poppins regular";
     padding-top: 2%;
 }
 .decor1{
-    float: right;
+    position: absolute;
+    margin-left: 85%;
 }
 #section2 h3{
     font-family:"poppins regular";
@@ -160,6 +161,7 @@ article{  font-family: "poppins regular";
     padding-bottom: 30px;
 }
 
+
 /*--photo plat+titre*/
 #image{    
     border-top-left-radius: 25px;
@@ -173,6 +175,9 @@ article{  font-family: "poppins regular";
     font-family: "poppins regular";
     font-size: 18px;
 }
+#section2 .conteneur_plat {
+        justify-content: center;
+    }
 #conteneur_plat{
     display: flex;
     flex-wrap: wrap;
@@ -598,7 +603,98 @@ footer p{ font-family: "poppins regular";
     #section2 h1{
  
         font-size: 40px; 
+    }#conteneur-plat .image1, .image2, .image3 {
+        position: absolute;
+        opacity: 0;
+        margin: 0;
     }
+    @keyframes animation-carte1{
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    2%{
+        opacity: 1;
+        transform: translate(0%);
+    }
+    33% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    35% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+} @keyframes animation-carte2{
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    33%{
+        opacity: 0;
+        transform: translate(50%);
+    }
+    34% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    67% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    68%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }   
+     97% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+}
+@keyframes animation-carte3{
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    33% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    67%{
+        opacity: 0;
+        transform: translate(50%);
+    }
+    68% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    98% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.image1{
+    animation: animation-carte1 15s infinite;
+}
+.image2{
+    animation: animation-carte2 15s infinite;
+}
+.image3{animation: animation-carte3 15s infinite;
+}
+
     .decoration_filet{
         opacity: 0%;
     }
@@ -759,12 +855,9 @@ footer p{ font-family: "poppins regular";
         padding-bottom: 5px;  
     }
     .footer_logo{
-        float: left;
-        margin-left: 0%;
-        margin-right: 0%;
-        font-size: 16px;
-        color:rgb(167, 167, 167);
-    }
+        text-align: center;
+        padding-bottom: 40px;
+     }
     footer>h3{
         font-family: "poppins regular";
         font-size: 18px;
@@ -885,6 +978,13 @@ footer p{ font-family: "poppins regular";
             padding-left: 30px ;
         }
     }
+@media screen and (min-width: 884px) and (max-width: 1192px){
+    .image1, .image2{
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    
+}
     @media screen and (min-width: 884px) and (max-width: 1039px){
         li{
             display: none;
@@ -897,14 +997,17 @@ footer p{ font-family: "poppins regular";
             background-size: 180%;
         } 
         .decoration_filet{
-            opacity: 0%;
+            display: none;
+        }
+        .decor1{
+            display: none;
         }
         footer>h3{
             font-family: "poppins regular";
             font-size: 18px;
             color: #5e6282;
         }
-    .welcome{
+        .welcome{
             background-size: 160%;} 
         #section3{     
             padding: 0px;
@@ -985,21 +1088,32 @@ footer p{ font-family: "poppins regular";
             justify-content: end;
         } .welcome{
             background-size: 190%;} 
+    
             #section3{     
                 padding: 0px;
                 padding-bottom: 0px;
-                background-size: 160%;
+                background-size: 190%;
             }
             .bouton_play{
-                padding-top: 80px;  
+                padding-top: 170px;  
             }
             .souligne2{
               width: 30%;
                top: 270px;
-               left: 220px;
+               left: 220px;}
+               .conteneur_plat{
+                   display:flex;
+                   flex-wrap: nowrap;
+               }
+               .decoration_filet{
+                display: none;
+            }
+            .decor1{
+                display: none;
             }
             #section3>h1{
-                padding-top: 200px;
+                margin-left: 300px;
+                text-align: center;
             }
             #section3 h1, p{
                 padding-left: 10%;
@@ -1018,16 +1132,110 @@ footer p{ font-family: "poppins regular";
                 width: 50%;
                 height: auto;
             }
+
+            #conteneur-plat .image1, .image2, .image3 {
+                position: absolute;
+                opacity: 0;
+                margin: 0;
+            }
+            @keyframes animation-carte1{
+            0% {
+                opacity: 0;
+                transform: translateX(0%);
+            }
+            2%{
+                opacity: 1;
+                transform: translate(0%);
+            }
+            33% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+            35% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+        } @keyframes animation-carte2{
+            0% {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+            33%{
+                opacity: 0;
+                transform: translate(50%);
+            }
+            34% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            67% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            68%{
+                opacity: 0;
+                transform: translateX(-50%);
+            }   
+             97% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+        }
+        @keyframes animation-carte3{
+            0% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+            33% {
+                opacity: 0;
+                transform: translateX(0%);
+            }
+            67%{
+                opacity: 0;
+                transform: translate(50%);
+            }
+            68% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+            98% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+        }
+
+        .image1{
+            animation: animation-carte1 15s infinite;
+        }
+        .image2{
+            animation: animation-carte2 15s infinite;
+        }
+        .image3{animation: animation-carte3 15s infinite;
+        }
+        
+        
             .illustration_endroit{
-                margin-top: -120px;
+                padding-top: -1500px;
             }
             #section4{    
                 background-size: 200%;
             }
             #conteneur_formulaire{
-                width: 60%;
+                width: 90%;
                 padding-left: 100px;
-                padding-right: 200px;
+                padding-right: 100px;
                 justify-content: center;
             }
             .bouton_envoyer_formulaire{
@@ -1038,9 +1246,9 @@ footer p{ font-family: "poppins regular";
                 display: none;
             }
             .footer_logo{
-               margin-left: 30%;
-               padding-bottom: 20px;
-            }
+                text-align: center;
+                padding-bottom: 40px;
+             }
             footer{
                 display: flex;
                 flex-direction: column;
@@ -1069,9 +1277,48 @@ footer p{ font-family: "poppins regular";
                 padding-bottom: 2px;
                 text-align: center;
             } 
+            #section4{ 
+                padding-top: 0%;
+                background-image: url("illustration_commander.jpg");
+                position: relative;
+                background-size: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+            }
+            #section4 h3{
+                margin-left: 8%;
+                padding-top: 6px;
+                font-family: "poppins regular";
+                font-size: 18px;
+                font-weight: 600;
+                color:#5e6282;
+                padding-bottom: 5px;
+            }
+            #section4 h1{ 
+                margin-left: 8%;
+                font-family: "volkhov bold";
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 1em;
+                padding-bottom: 50px;
+            }
+            #commander{
+                list-style-type: none;
+                margin-top: 5px;
+                font-family: "poppins regular";
+                font-size: 16px;
+                color: #3e3f43;
+            }
+            #section4>p{
+                font-family: "popins regular";
+                font-size: 16px;
+                padding-left: 15px;
             
+            }
     }
     @media screen and (min-width: 884px) and (max-width: 957px){
+
+      
         #conteneur_formulaire{
             width: 40%;
             margin-left: 100px;
@@ -1121,6 +1368,96 @@ footer p{ font-family: "poppins regular";
     }  .telechargement_appli{
         padding-left: 30px ;
     }
+}
+@media screen and (min-width: 780px) and (max-width: 883px){
+    
+      
+    #conteneur_formulaire{
+        width: 10%;
+        margin-left: 150px;
+        right: 0%;
+        padding-left: 100px;
+    }
+    .bouton_envoyer_formulaire{
+        display: block;
+        margin-left: 80px; 
+    }  
+    .image_formulaire{
+        display: none;
+    }
+     #section5 h4{
+            text-align: center;
+        }
+        #section5 p{
+            text-align: center;
+        }
+        .footer_logo{
+            text-align: center;
+            padding-bottom: 40px;
+         }
+         footer{
+             display: flex;
+             flex-direction: column;
+             padding-bottom: 10px;  
+         }
+         footer h3{
+             display: flex;
+             
+         }
+         .lien_complet_footer{
+             margin-left: 10%;
+         }          
+         .footer_lien{
+             padding-right: 10px;
+         }
+         .footer_liens2{
+             padding-left: 2px;
+             padding-right: 40px;
+         }
+         .telechargement_appli{
+             text-align: center;
+             padding-top: 30px;
+         }
+         footer p{
+             padding-top: 10px;
+             padding-bottom: 2px;
+             text-align: center;
+         } 
+}
+@media screen and (min-width: 883px) and (max-width: 982px){
+    .footer_logo{
+        text-align: center;
+        padding-bottom: 40px;
+     }
+     footer{
+         display: flex;
+         flex-direction: column;
+         padding-bottom: 10px;  
+     }
+     footer h3{
+         display: flex;
+         
+     }
+     .lien_complet_footer{
+         margin-left: 10%;
+     }          
+     .footer_lien{
+         padding-right: 10px;
+     }
+     .footer_liens2{
+         padding-left: 2px;
+         padding-right: 40px;
+     }
+     .telechargement_appli{
+         text-align: center;
+         padding-top: 30px;
+     }
+     footer p{
+         padding-top: 10px;
+         padding-bottom: 2px;
+         text-align: center;
+     } 
+    
 }
     
         
