@@ -1,6 +1,5 @@
-
 *{
-    margin: 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
 }
 /*haut/menu début*/
 
@@ -133,7 +132,8 @@ article{  font-family: "poppins regular";
     transition: transform 0.2s;
 }
 .button:hover{
-    width: 210px;
+    transform:scale(1.05);
+    transition: 2ms ease-out;
 }
 /*fin de section 1*/
 
@@ -143,7 +143,7 @@ article{  font-family: "poppins regular";
 }
 .decor1{
     position: absolute;
-    margin-left: 85%;
+    margin-left: 90%;
 }
 #section2 h3{
     font-family:"poppins regular";
@@ -206,7 +206,7 @@ article{  font-family: "poppins regular";
 .decoration_filet{
     width: 9%;
     position: absolute;
-    margin-left: 25%;
+    margin-left: 24%;
     float: right;
 }
 /*--photo maki+titre*/
@@ -214,7 +214,6 @@ article{  font-family: "poppins regular";
     display: flex;
     flex-wrap: wrap;    
     align-items: center;
-    margin-bottom: 50px;
     justify-content: center;
     align-content: center;
 }
@@ -223,20 +222,12 @@ article{  font-family: "poppins regular";
     font-size: 20px;
     line-height: 3em;
 }
-.photo1,.photo2, .photo3{
+.photo1,.photo2, .photo3, .photo4{
+    width:15%;
     padding-top: 20px;
-    padding-left: 40px;
-    padding-right:40px;
-    font-size: 16px;
-    line-height: 2em;
-    font-family: "poppins regular";
-    color: #5e6282; 
-    text-align: center;
-}
-.photo4{
-    padding-top: 20px;
-    padding-left: 45px;
-    padding-right:45px;
+    padding-left: 60px;
+    padding-right:60px;
+    padding-bottom: 80px;
     font-size: 16px;
     line-height: 2em;
     font-family: "poppins regular";
@@ -267,7 +258,8 @@ article{  font-family: "poppins regular";
     text-align: center; 
 }        
 .button2:hover{
-    width: 210px;
+    transform:scale(1.05);
+    transition: 2ms ease-out;
 }
 /*fin section 2*/
 
@@ -305,7 +297,9 @@ article{  font-family: "poppins regular";
    left: 200px;
    z-index:2;
 }
-
+.chef{
+    display: none;
+}
 #section3 h1{
     font-family: "volkhov bold"; 
     font-size: 84px;  
@@ -334,6 +328,9 @@ article{  font-family: "poppins regular";
     height: auto;
     z-index: 3;
     bottom: -335px;
+}
+.photo_endroit2{
+    margin-left: -5px;
 }
 /*fin section 3*/
 
@@ -375,7 +372,6 @@ article{  font-family: "poppins regular";
     font-size: 16px;
     padding-left: 15px;
     margin-left: 8%;
-
 }
 .button3{
     background-color: rgb(255, 182, 45);
@@ -392,7 +388,8 @@ article{  font-family: "poppins regular";
     font-size: large;       
 }
 .button3:hover{
-    width: 210px;
+    transform:scale(1.05);
+    transition: 2ms ease-out;
 }
     /*fin section 4
     /*début section5*/
@@ -552,8 +549,7 @@ footer p{ font-family: "poppins regular";
     font-size: 14px;
     text-align: center;
     color:rgb(110, 110, 110);
-}
-@media screen and (min-width: 360px) and (max-width: 779px){
+}@media screen and (min-width: 360px) and (max-width: 779px){
     li{
         display: none;
     }
@@ -566,8 +562,7 @@ footer p{ font-family: "poppins regular";
     .welcome{
         background-size: 1500px;
     }.welcome p {
-        padding-top: 50px;
-        padding-left: 30px; 
+        padding-top: 50px;        
         padding-bottom: 50px;
         line-height: 1em; 
         text-align: center;
@@ -593,7 +588,6 @@ footer p{ font-family: "poppins regular";
         padding-left: none;
     }
     #section2 h1{
- 
         font-size: 40px; 
     }#conteneur-plat .image1, .image2, .image3 {
         position: absolute;
@@ -680,38 +674,54 @@ footer p{ font-family: "poppins regular";
     }
 
     .image1{
-    animation: animation-carte1 15s infinite;
-}
+        animation: animation-carte1 15s infinite;
+    }
     .image2{
-    animation: animation-carte2 15s infinite;
-}
+        animation: animation-carte2 15s infinite;
+    }
     .image3{animation: animation-carte3 15s infinite;
-}
-
+    }
     .decoration_filet{
-        opacity: 0%;
-}
+            opacity: 0%;
+    }
     .decor1{
-        display: none;
-}
+            display: none;
+    }#conteneur_maki{
+        display: flex;
+        flex-direction: column;
+    }
+    #conteneur_maki h6{
+        font-family: "open sans regular2";
+        font-size: 20px;
+        line-height: 3em;
+    }
+    .photo1,.photo2, .photo3, .photo4{
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right:40px;
+        font-size: 16px;
+        line-height: 2em;
+        font-family: "poppins regular";
+        color: #5e6282; 
+        text-align: center;
+    }
+    .photo1:hover, .photo2:hover,.photo3:hover, .photo4:hover{
+        border-radius: none;
+        box-shadow: none;
+    }
     .button2{
-    display: block;
-    width: center;
-    margin-left: 35%;
-}      
+        display: block;
+        width: center;
+        margin-left: 35%;
+    }      
     .vidéo{ 
-        padding: 0;
+        padding: 0%;
+        margin: 0%;
         width: 100%;
         height: auto;
         position: absolute;
         cursor: pointer;
     }
-    .chef{
-        position: relative;
-        width: 100%;
-        height: auto;
-        z-index: auto;
-    }  
     .bouton_play{
         float: left;
         width: 20%;
@@ -719,6 +729,13 @@ footer p{ font-family: "poppins regular";
         left: 42%;
         position: relative; 
         cursor: pointer;
+    }
+    .chef{
+        margin-top: -100px;
+        margin: 0%;
+        display: flex;
+        max-width: 100%;
+        height: auto;
     }
     .souligne2{
        display: none;
@@ -738,7 +755,8 @@ footer p{ font-family: "poppins regular";
         position: relative;
         z-index: 1;
         left:0;
-        bottom: -102px;
+        margin-top: 0%;
+        bottom: -82px;
     }
     .photo_endroit1{
         float:left;
@@ -760,16 +778,23 @@ footer p{ font-family: "poppins regular";
     #section4 h1{ 
         text-align: center;
     }
+    #commander{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
    #commander>p{
         list-style-type: none;
-        margin-top: 60px;
+        margin-top: 10px;
         margin-left: 13%;
+        margin-bottom: 0px;
         font-family: "poppins regular";
         font-size: 16px;
         color: #3e3f43;
     }
     .button3{
-        margin-left: 10%;     
+        margin-left: 38%;
+        margin-top: 50px;     
     }
     .button3:hover{
         width: 210px;
@@ -788,7 +813,7 @@ footer p{ font-family: "poppins regular";
         font-family: "poppins regular";
         font-size: 18px;
         color: #5e6282;
-        margin-top: 70px;
+        margin-top: 100px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -847,23 +872,25 @@ footer p{ font-family: "poppins regular";
          
      }
      .lien_complet_footer{
-         margin-left: 30%;
+         display: flex;
+         flex-wrap: wrap;
+         margin-left: 15%;
      }          
      .footer_lien{
-         padding-right: 10px;
+         padding-right: 100px;
      }
      .footer_liens2{
-         padding-left: 2px;
-         padding-right: 10px;
+         padding-left: 2%;
+         
      }
      .telechargement_appli{
-         text-align: center;
-         padding-top: 50px;
+            padding-top: 20px;
+            text-align: center;
      }
      footer p{
          padding-top: 10px;
+         margin-right: 30%;
          padding-bottom: 2px;
-         text-align: center;
      } 
     }
     @media screen and (min-width: 1377px) and (max-width: 1571px){
@@ -1011,14 +1038,16 @@ footer p{ font-family: "poppins regular";
             padding-top: 10px;
             padding-bottom: 320px;
         }
+        .illustration_endroit{
+            display: inline-block;
+            width: 100%;
+        }
         .photo_endroit1{
             float:left;
-            width: 50%;
             height: auto;
         }
         .photo_endroit2{
             float: right;
-            width: 50%;
             height: auto;
         }
         #section4{    
@@ -1057,9 +1086,59 @@ footer p{ font-family: "poppins regular";
             padding-left: 30px ;
         }
     }
-
+    @media screen and (min-width: 884px) and (max-width: 957px){
+        #conteneur_formulaire{
+            width: 40%;
+            margin-left: 100px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .bouton_envoyer_formulaire{
+            display: block;
+            margin-left: 80px; 
+        }  
+        .image_formulaire{
+            display: none;
+        }
+         #section5 h4{
+                text-align: center;
+            }
+            #section5 p{
+                text-align: center;
+            }
+    footer{
+        margin-top: 50px;
+        background-color: rgb(241, 240, 240);
+        background-size: 100%;
+        padding-top: 50px;
+        padding-bottom: 5px;  
+    }
+    .footer_logo{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .lien_complet_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .logo_uberEats2{
+        width: 200px;
+    }
+    .footer_logo{
+        padding-left: 10px;
+    }
+    .footer_liens2{
+        padding-left: 30px;
+    }
+    .footer_lien{
+        padding-left: 20px;
+    }  .telechargement_appli{
+        padding-left: 30px ;
+    }
+}
     @media screen and (min-width: 780px) and (max-width: 883px){
-            li{
+        li{
             display: none;
             }
             .menu_bouton_burger{
@@ -1270,225 +1349,13 @@ footer p{ font-family: "poppins regular";
             }
             .telechargement_appli{
                 text-align: center;
-                padding-top: 30px;
             }
             footer p{
                 padding-top: 10px;
                 padding-bottom: 2px;
                 text-align: center;
             } 
-            #section4{ 
-                padding-top: 25%;
-                background-image: url("illustration_commander.jpg");
-                position: relative;
-                background-size: 140%;
-                width: 100%;
-                background-repeat: no-repeat;
-            }
-            #section4 h3{
-                margin-left: 8%;
-                padding-top: 6px;
-                font-family: "poppins regular";
-                font-size: 18px;
-                font-weight: 600;
-                color:#5e6282;
-                padding-bottom: 5px;
-            }
-            #section4 h1{ 
-                margin-left: 8%;
-                font-family: "volkhov bold";
-                font-size: 50px;
-                font-weight: 400;
-                line-height: 1em;
-                padding-bottom: 50px;
-            }
-            #commander{
-                list-style-type: none;
-                margin-top: 5px;
-                font-family: "poppins regular";
-                font-size: 16px;
-                color: #3e3f43;
-            }
-            #section4>p{
-                font-family: "popins regular";
-                font-size: 16px;
-                padding-left: 15px;
-            }
-           
-    }
-    @media screen and (min-width: 884px) and (max-width: 957px){
-        #conteneur_formulaire{
-            width: 40%;
-            margin-left: 100px;
-            padding-left: 150px;
-            padding-right: 150px;
-        }
-        .bouton_envoyer_formulaire{
-            display: block;
-            margin-left: 80px; 
-        }  
-        .image_formulaire{
-            display: none;
-        }
-         #section5 h4{
-                text-align: center;
-            }
-            #section5 p{
-                text-align: center;
-            }
-    footer{
-        margin-top: 50px;
-        background-color: rgb(241, 240, 240);
-        background-size: 100%;
-        padding-top: 50px;
-        padding-bottom: 5px;  
-    }
-    .footer_logo{
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-    .lien_complet_footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .logo_uberEats2{
-        width: 200px;
-    }
-    .footer_logo{
-        padding-left: 10px;
-    }
-    .footer_liens2{
-        padding-left: 30px;
-    }
-    .footer_lien{
-        padding-left: 20px;
-    }  .telechargement_appli{
-        padding-left: 30px ;
-    }
-}
-    @media screen and (min-width: 780px) and (max-width: 883px){
-    
-        .welcome p {
         
-            padding-left: 8%;
-        }
-        .button2{ 
-            margin-left:40%;
-            margin-top: 0px;
-            justify-content: center;
-        }      
-        .illustration_endroit{
-            width:100%;
-            height: auto;
-        }
-        #conteneur_formulaire{
-            width: 10%;
-            margin-left: 150px;
-            right: 0%;
-            padding-left: 100px;
-        }
-        .bouton_envoyer_formulaire{
-            display: block;
-            margin-left: 80px; 
-        }  
-        .image_formulaire{
-            display: none;
-        }
-        #section5 h4{
-                text-align: center;
-            }
-            #section5 p{
-                text-align: center;
-            }
-            .footer_logo{
-                text-align: center;
-                padding-bottom: 40px;
-            }
-            footer{
-                display: flex;
-                flex-direction: column;
-                padding-bottom: 10px;  
-            }
-            footer h3{
-                display: flex;
-                
-            }
-            .lien_complet_footer{
-                margin-left: 10%;
-            }          
-            .footer_lien{
-                padding-right: 10px;
-            }
-            .footer_liens2{
-                padding-left: 2px;
-                padding-right: 40px;
-            }
-            .telechargement_appli{
-                text-align: center;
-                padding-top: 30px;
-            }
-            footer p{
-                padding-top: 10px;
-                padding-bottom: 2px;
-                text-align: center;
-            } 
-            #section3{     
-                background-image: url("illustration_chef.jpg");
-                position: relative;
-                background-size: 160%;
-                width: 100%;
-                background-repeat: no-repeat;
-                padding: 0px;
-                padding-bottom: 400px;
-            }
-            .vidéo{ 
-            
-                padding-top: 50px;
-                padding-left: 10%;
-                width: 30%;
-                position: absolute;
-                cursor: pointer;
-            }  
-            .bouton_play{
-            
-                float: left;
-                width: 6%;
-                padding-top: 100px;
-                left: 22%;
-                position: relative; 
-                cursor: pointer;
-            }
-            .souligne2{
-            float: left;
-            position: absolute;  
-            top: 290px;
-            left: 200px;
-            z-index:2;
-            }           
-            #section3 h1{
-                font-family: "volkhov bold"; 
-                font-size: 84px;  
-                padding-top: 220px;
-                color:white;
-                font-size: 70px;
-                
-            }
-            #section3 h1, p{
-                padding-left: 0%;
-            }
-            #section3 p{
-                padding-top: 30px;
-                padding-bottom: 0px;
-            }
-            #section4{ 
-                padding-top: 200px;
-                background-image: url("illustration_commander.jpg");
-                position: relative;
-                background-size: 160%;
-                width: 100%;
-                background-repeat: no-repeat;
-            }
     }
     @media screen and (min-width: 884px) and (max-width: 982px){
    .footer_logo{
@@ -1515,7 +1382,7 @@ footer p{ font-family: "poppins regular";
         }
         .telechargement_appli{
             text-align: center;
-            padding-top: 30px;
+            
         }
         footer p{
             padding-top: 10px;
