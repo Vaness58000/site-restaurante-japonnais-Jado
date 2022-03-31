@@ -285,7 +285,7 @@ article{
 .bouton_play{
         float: left;
         width: 4%;
-        padding-top: 120px;
+        padding-top: 7%;
         left: 18%;
         position: relative; 
         cursor: pointer;
@@ -453,7 +453,7 @@ input:focus {
         width: 490px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;  
-        height: 610px; 
+        height: 625px; 
 }
 #conteneur_formulaire{
         display: table;
@@ -466,7 +466,7 @@ input:focus {
 }
 .bouton_envoyer_formulaire{
         margin-top: 50px;
-        margin-left: 150px;
+        margin-left: 140px;
         margin-bottom: 50px;
         background-color: rgb(49, 78, 243);
         border: none;
@@ -491,6 +491,16 @@ footer{
         margin-right: 10%;
         font-size: 16px;
         color:#5e6282;
+}
+.footer_logo:hover img:first-child {
+    animation: logo-animation 0.5s ease-in;
+} 
+@keyframes logo-animation{
+    20% {
+        transform: rotate(15deg);}
+    40% {
+        transform: rotate(-15deg) ;
+}
 }
 .footer_logo h4{
         padding-top: 20px;
@@ -552,6 +562,7 @@ footer p{
         font-family: "poppins regular";
         font-size: 14px;
         text-align: center;
+        margin-right: 10%;
         color:rgb(110, 110, 110);
 }
     @media screen and (min-width: 360px) and (max-width: 779px){
